@@ -47,7 +47,7 @@ class WelcomePage extends StatelessWidget {
 
               style: TextStyle(
                 fontFamily: 'Font',
-                fontSize: 23.0,
+                fontSize: 23.5,
               ),
             ),
           ),
@@ -79,7 +79,7 @@ class BookListPage extends StatelessWidget {
           ),
         ),
         child: ListView(
-          padding: EdgeInsets.all(24.0),
+          padding: EdgeInsets.all(24.5),
           children: [
             BookCard(
               bookName: 'Robot-Proof',
@@ -125,7 +125,7 @@ class BookCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.transparent,
+      color: Colors.greenAccent,
       child: ListTile(
         leading: CircleAvatar(
           child: Image.asset(bookCoverAsset),
@@ -227,7 +227,7 @@ class _BuyNowPageState extends State<BuyNowPage> {
           ),
         ),
         child: Padding(
-          padding: EdgeInsets.all(30.0),
+          padding: EdgeInsets.all(30.5),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -237,12 +237,12 @@ class _BuyNowPageState extends State<BuyNowPage> {
                   fontFamily: 'Font',
                 ),
               ),
-              SizedBox(height: 50.0),
+              SizedBox(height: 52.0),
               CircleAvatar(
                 child: Image.asset(widget.bookCoverAsset),
                 radius: 50,
               ),
-              SizedBox(height: 50.0),
+              SizedBox(height: 52.0),
               Text(
                 'Author: ${widget.authorName}',
                 style: TextStyle(
@@ -267,7 +267,7 @@ class _BuyNowPageState extends State<BuyNowPage> {
                   fontFamily: 'Font',
                 ),
               ),
-              SizedBox(height: 70.0),
+              SizedBox(height: 55.0),
               DropdownButton<String>(
                 items: ['Hard_Cover', 'Paper_Back', 'E-Book'].map((String value) {
                   return DropdownMenuItem<String>(
@@ -292,7 +292,7 @@ class _BuyNowPageState extends State<BuyNowPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 10.0),
+              SizedBox(height: 12.0),
               if (selectedOption != null)
                 Text(
                   'Selected: $selectedOption book Confirmed',
