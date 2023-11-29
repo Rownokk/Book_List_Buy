@@ -47,7 +47,7 @@ class WelcomePage extends StatelessWidget {
 
               style: TextStyle(
                 fontFamily: 'Font',
-                fontSize: 23.5,
+                fontSize: 23.0,
               ),
             ),
           ),
@@ -79,23 +79,23 @@ class BookListPage extends StatelessWidget {
           ),
         ),
         child: ListView(
-          padding: EdgeInsets.all(24.5),
+          padding: EdgeInsets.all(24.0),
           children: [
             BookCard(
               bookName: 'Robot-Proof',
               authorName: 'Joseph E.Aoun',
-              rating: '4.4',
+              rating: '4.5',
               bookCoverAsset: 'assets/images/book2.jpg',
               price: 20.25,
               description: ' This book is an authoritative call for action and a compelling model for the next step in the evolution of higher education. ',
             ),
             BookCard(
-              bookName: 'Python Crash Course',
-              authorName: 'Eric Mathes',
-              rating: '5.0',
+              bookName: 'The Productive Programmer',
+              authorName: 'Neal Ford',
+              rating: '3.8',
               bookCoverAsset: 'assets/images/book3.jpg',
-              price: 31.93,
-              description: 'Python Crash Course is the world’s best-selling guide to the Python programming language.',
+              price: 16.74,
+              description: 'It is very practical. It is about program launchers, keystroke macros, code generators, etc. that help you be more productive. ',
             ),
             // Add more BookCard instances with unique bookCoverAsset paths
           ],
@@ -125,7 +125,7 @@ class BookCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Colors.greenAccent,
+      color: Colors.transparent,
       child: ListTile(
         leading: CircleAvatar(
           child: Image.asset(bookCoverAsset),
@@ -227,7 +227,7 @@ class _BuyNowPageState extends State<BuyNowPage> {
           ),
         ),
         child: Padding(
-          padding: EdgeInsets.all(30.5),
+          padding: EdgeInsets.all(30.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -237,12 +237,12 @@ class _BuyNowPageState extends State<BuyNowPage> {
                   fontFamily: 'Font',
                 ),
               ),
-              SizedBox(height: 52.0),
+              SizedBox(height: 50.0),
               CircleAvatar(
                 child: Image.asset(widget.bookCoverAsset),
                 radius: 50,
               ),
-              SizedBox(height: 52.0),
+              SizedBox(height: 50.0),
               Text(
                 'Author: ${widget.authorName}',
                 style: TextStyle(
@@ -267,7 +267,7 @@ class _BuyNowPageState extends State<BuyNowPage> {
                   fontFamily: 'Font',
                 ),
               ),
-              SizedBox(height: 55.0),
+              SizedBox(height: 70.0),
               DropdownButton<String>(
                 items: ['Hard_Cover', 'Paper_Back', 'E-Book'].map((String value) {
                   return DropdownMenuItem<String>(
@@ -292,7 +292,7 @@ class _BuyNowPageState extends State<BuyNowPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 12.0),
+              SizedBox(height: 10.0),
               if (selectedOption != null)
                 Text(
                   'Selected: $selectedOption book Confirmed',
