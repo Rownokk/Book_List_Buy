@@ -292,7 +292,7 @@ class _BuyNowPageState extends State<BuyNowPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 10.0),
+              SizedBox(height: 5.0),
               if (selectedOption != null)
                 Text(
                   'Selected: $selectedOption book Confirmed',
