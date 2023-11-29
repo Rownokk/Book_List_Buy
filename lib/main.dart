@@ -93,7 +93,7 @@ class BookListPage extends StatelessWidget {
               bookName: 'The Productive Programmer',
               authorName: 'Neal Ford',
               rating: '3.8',
-              bookCoverAsset: 'assets/images/book3.jpg',
+              bookCoverAsset: 'assets/images/book1.jpg',
               price: 16.74,
               description: 'It is very practical. It is about program launchers, keystroke macros, code generators, etc. that help you be more productive. ',
             ),
