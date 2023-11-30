@@ -1,4 +1,4 @@
-# assignment Book_List_Buy
+# Book_List_Buy
 
 A new Flutter project.
 
