@@ -16,4 +16,6 @@ To begin developing with Book_List_Buy, ensure you have Flutter installed on you
 
 Once Flutter is installed, clone this repository to your local machine.
 
-Author- Rownok Jahan Mowmita
+<h3>Author</h3>
+<br>
+<h3>- Rownok Jahan Mowmita</h3>
